@@ -1,0 +1,27 @@
+name: Shabbat CI
+
+on:
+  push:
+    branches: [ "main" ]
+
+jobs:
+  test:
+    runs-on: ubuntu-latest
+
+    steps:
+    - name: Checkout
+      uses: actions/checkout@v4
+
+    - name: Build Docker
+      run: docker build -t shabbat_app .
+
+    - name: Run tests
+      run: docker run -v ${{ github.workspace }}:/app/output shabbat_app
+
+    - name: Upload logs
+      uses: actions/upload-artifact@v4
+      with:
+        name: logs
+        path: |
+          log.json
+          summary.txt
