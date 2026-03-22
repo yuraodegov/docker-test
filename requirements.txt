@@ -1,1 +1,5 @@
+<<<<<<< HEAD
 pyserial
+=======
+pyserial
+>>>>>>> 3c97598 (update CI)

@@ -1,0 +1,112 @@
+[
+  {
+    "case": "SHABBAT",
+    "step_index": 0,
+    "ok": true,
+    "command": "set_output_1:SHABBAT=1",
+    "expect_get": "get_outputs_1",
+    "expect_field": "SHABBAT",
+    "expect_value": 1,
+    "got_value": 1,
+    "message": "OK"
+  },
+  {
+    "case": "SHABBAT",
+    "step_index": 1,
+    "ok": true,
+    "command": "set_output_1:SHABBAT=0",
+    "expect_get": "get_outputs_1",
+    "expect_field": "SHABBAT",
+    "expect_value": 0,
+    "got_value": 0,
+    "message": "OK"
+  },
+  {
+    "case": "MENU",
+    "step_index": 0,
+    "ok": true,
+    "command": "set_output_1:MENU=1",
+    "expect_get": "get_outputs_1",
+    "expect_field": "MENU",
+    "expect_value": 1,
+    "got_value": 1,
+    "message": "OK"
+  },
+  {
+    "case": "MENU",
+    "step_index": 1,
+    "ok": true,
+    "command": "set_output_1:MENU=0",
+    "expect_get": "get_outputs_1",
+    "expect_field": "MENU",
+    "expect_value": 0,
+    "got_value": 0,
+    "message": "OK"
+  },
+  {
+    "case": "EXH",
+    "step_index": 0,
+    "ok": true,
+    "command": "set_output_1:EXH=1",
+    "expect_get": "get_outputs_1",
+    "expect_field": "EXH",
+    "expect_value": 1,
+    "got_value": 1,
+    "message": "OK"
+  },
+  {
+    "case": "EXH",
+    "step_index": 1,
+    "ok": true,
+    "command": "set_output_1:EXH=0",
+    "expect_get": "get_outputs_1",
+    "expect_field": "EXH",
+    "expect_value": 0,
+    "got_value": 0,
+    "message": "OK"
+  },
+  {
+    "case": "HJ",
+    "step_index": 0,
+    "ok": true,
+    "command": "set_output_1:HJ=1",
+    "expect_get": "get_outputs_1",
+    "expect_field": "HJ",
+    "expect_value": 1,
+    "got_value": 1,
+    "message": "OK"
+  },
+  {
+    "case": "HJ",
+    "step_index": 1,
+    "ok": true,
+    "command": "set_output_1:HJ=0",
+    "expect_get": "get_outputs_1",
+    "expect_field": "HJ",
+    "expect_value": 0,
+    "got_value": 0,
+    "message": "OK"
+  },
+  {
+    "case": "HC",
+    "step_index": 0,
+    "ok": true,
+    "command": "set_output_1:HC=1",
+    "expect_get": "get_outputs_1",
+    "expect_field": "HC",
+    "expect_value": 1,
+    "got_value": 1,
+    "message": "OK"
+  },
+  {
+    "case": "HC",
+    "step_index": 1,
+    "ok": true,
+    "command": "set_output_1:HC=0",
+    "expect_get": "get_outputs_1",
+    "expect_field": "HC",
+    "expect_value": 0,
+    "got_value": 0,
+    "message": "OK"
+  }
+]
