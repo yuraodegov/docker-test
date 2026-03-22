@@ -5,6 +5,6 @@ def test_greet():
     assert greet() == "Hello Dima"
 
 
-def test_age():
-    assert get_age() == 41
-    # CI trigger test
+
+def test_get_age():
+    assert get_age() == 25
