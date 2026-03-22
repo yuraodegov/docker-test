@@ -5,6 +5,8 @@ WORKDIR /app
 COPY requirements.txt .
 RUN pip install -r requirements.txt
 
-COPY shabbat.py .
+COPY . .
 
-CMD ["python", "shabbat.py", "--dry-run"]
+ENV PYTHONPATH=/app
+
+CMD ["pytest"]
