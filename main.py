@@ -3,7 +3,7 @@ def greet():
 
 
 def get_age():
-    return 30
+    return 41
 
 
 if __name__ == "__main__":
