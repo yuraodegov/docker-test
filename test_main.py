@@ -7,3 +7,4 @@ def test_greet():
 
 def test_age():
     assert get_age() == 41
+    # CI trigger test
