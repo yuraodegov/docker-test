@@ -12,17 +12,23 @@ jobs:
     - name: Checkout
       uses: actions/checkout@v4
 
-    - name: Build Docker
+    - name: Build Docker image
       run: docker build -t shabbat_app .
 
-    - name: Run tests
-      run: docker run -v ${{ github.workspace }}:/app/output shabbat_app
+    - name: Run tests inside container
+      run: docker run shabbat_app
+
+    - name: Copy logs from container
+      run: |
+        CONTAINER_ID=$(docker create shabbat_app)
+        docker cp $CONTAINER_ID:/app/log.json ./log.json || true
+        docker cp $CONTAINER_ID:/app/summary.txt ./summary.txt || true
+        docker rm $CONTAINER_ID
 
     - name: Upload logs
       uses: actions/upload-artifact@v4
       with:
-        name: logs
+        name: test-logs
         path: |
           log.json
           summary.txt
-          # test
