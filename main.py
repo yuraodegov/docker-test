@@ -8,3 +8,4 @@ def get_age():
 
 if __name__ == "__main__":
     print(greet())
+    # CI trigger test
