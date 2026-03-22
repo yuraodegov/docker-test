@@ -7,4 +7,4 @@ def test_greet():
 
 
 def test_get_age():
-    assert get_age() == 25
+    assert get_age() == 255
