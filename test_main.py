@@ -2,7 +2,7 @@ from main import greet, get_age
 
 
 def test_greet():
-    assert greet() == "Hello Idan"
+    assert greet() == "Hello Dima"
 
 
 
