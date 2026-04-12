@@ -1,5 +1,5 @@
 def greet():
-    return "Hello Dima"
+    return "Hello Idan"
 
 
 def get_age():
