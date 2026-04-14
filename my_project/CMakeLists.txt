@@ -1,0 +1,7 @@
+cmake_minimum_required(VERSION 3.16)
+project(button_tests C)
+set(CMAKE_C_STANDARD 11)
+add_executable(test_button tests/test_button.c)
+target_include_directories(test_button PRIVATE tests tests/mocks src)
+enable_testing()
+add_test(NAME ButtonTests COMMAND test_button)
