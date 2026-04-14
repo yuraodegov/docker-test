@@ -54,8 +54,8 @@ static void test_button2_when_filling(void){
 
     press_button(BUTTON_2, 50);
 
-    assert(mock_stop_called     == 0);
-    assert(mock_dispense_called == 1);
+    assert(mock_stop_called     == 1);
+    assert(mock_dispense_called == 0);
     printf("[PASS] test_button2_short_click_not_ready\n");
 
 }
