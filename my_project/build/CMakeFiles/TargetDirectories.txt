@@ -1,4 +1,0 @@
-/workspaces/docker-test/my_project/build/CMakeFiles/test_button.dir
-/workspaces/docker-test/my_project/build/CMakeFiles/test.dir
-/workspaces/docker-test/my_project/build/CMakeFiles/edit_cache.dir
-/workspaces/docker-test/my_project/build/CMakeFiles/rebuild_cache.dir

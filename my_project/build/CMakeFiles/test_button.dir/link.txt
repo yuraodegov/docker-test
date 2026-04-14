@@ -1,1 +1,0 @@
-/usr/bin/cc CMakeFiles/test_button.dir/tests/test_button.c.o -o test_button 
