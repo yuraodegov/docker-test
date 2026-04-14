@@ -46,6 +46,21 @@ static void test_button2_not_ready(void) {
     assert(mock_stop_called==1); assert(mock_dispense_called==0);
     printf("[PASS] test_button2_not_ready\n");
 }
+
+static void test_button2_when_filling(void){
+    reset_all();
+    buttonsInitialize();
+    mock_dispenser_state = DISPENSER_SODA_DISPENSE;
+
+    press_button(BUTTON_2, 50);
+
+    assert(mock_stop_called     == 0);
+    assert(mock_dispense_called == 1);
+    printf("[PASS] test_button2_short_click_not_ready\n");
+
+}
+
+
 static void test_button1_carbonate(void) {
     reset_all(); buttonsInitialize();
     mock_dispenser_state=DISPENSER_FILL_WATER_FULL;
