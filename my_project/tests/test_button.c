@@ -121,6 +121,8 @@ int main(void) {
     test_button3_level();
     test_long_press();
     test_double_click();
+    test_button2_when_filling();
+    test_button1_no_carbonate_when_dispensing();
     printf("============================\n");
     printf("All tests passed!\n");
     return 0;
