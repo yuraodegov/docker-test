@@ -85,6 +85,17 @@ static void test_double_click(void) {
     printf("[PASS] test_double_click\n");
 }
 
+static void test_button1_no_carbonate_when_dispensing(void) {
+    reset_all();
+    buttonsInitialize();
+    mock_dispenser_state = DISPENSER_SODA_DISPENSE; // ← меняем состояние
+
+    press_button(BUTTON_1, 50);
+
+    assert(mock_carbonate_called == 0); // ← проверяем что НЕ вызвалась
+    printf("[PASS] test_button1_no_carbonate_when_dispensing\n");
+}
+
 int main(void) {
     printf("======= Button Tests =======\n");
     test_init_state();
