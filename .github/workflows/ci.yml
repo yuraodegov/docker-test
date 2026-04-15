@@ -1,3 +1,5 @@
+name: CI — Button Tests
+
 on:
   push:
     branches: [ main ]
