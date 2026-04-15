@@ -33,3 +33,6 @@ jobs:
         with:
           name: test_button
           path: my_project/build/test_button
+
+      - name: Monitor log.json
+        run: python3 monitor.py log.json
